@@ -11,7 +11,7 @@ class CallerCharacter {
   final String phoneNumber;
 
   @HiveField(2)
-  final String image;
+  final String photo;
 
   @HiveField(3)
   final String ringtone;
@@ -19,7 +19,7 @@ class CallerCharacter {
   CallerCharacter({
     required this.name,
     required this.phoneNumber,
-    required this.image,
+    required this.photo,
     required this.ringtone,
   });
 }

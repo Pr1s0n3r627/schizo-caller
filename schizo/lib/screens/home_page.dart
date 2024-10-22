@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import '../models/caller_character.dart';
-import 'create_character.dart';
+import '../screens/create_character.dart';
 import '../services/call_scheduler.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -42,7 +44,7 @@ class _HomePageState extends State<HomePage> {
           final character = characterBox?.getAt(index) as CallerCharacter;
           return ListTile(
             leading: CircleAvatar(
-              backgroundImage: AssetImage(character.image),
+              backgroundImage: AssetImage(character.photo),
             ),
             title: Text(character.name),
             subtitle: Text(character.phoneNumber),

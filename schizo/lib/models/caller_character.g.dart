@@ -19,7 +19,7 @@ class CallerCharacterAdapter extends TypeAdapter<CallerCharacter> {
     return CallerCharacter(
       name: fields[0] as String,
       phoneNumber: fields[1] as String,
-      image: fields[2] as String,
+      photo: fields[2] as String,
       ringtone: fields[3] as String,
     );
   }
@@ -33,7 +33,7 @@ class CallerCharacterAdapter extends TypeAdapter<CallerCharacter> {
       ..writeByte(1)
       ..write(obj.phoneNumber)
       ..writeByte(2)
-      ..write(obj.image)
+      ..write(obj.photo)
       ..writeByte(3)
       ..write(obj.ringtone);
   }

@@ -15,7 +15,7 @@ class CallScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
-              backgroundImage: AssetImage(character.image),
+              backgroundImage: AssetImage(character.photo),
               radius: 50,
             ),
             SizedBox(height: 20),
